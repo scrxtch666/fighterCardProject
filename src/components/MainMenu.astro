@@ -1,18 +1,54 @@
 ---
 import { Image } from "astro:assets";
-import logo from "";
+import logo from "../assets/logo.png";
 ---
 
-<div class="menuBar">
-  <div>Ahoj</div>
-</div>
+<ul>
+  <div class="logoPart">
+    <li><a href="">Logo</a></li>
+    <!--
+  <li><Image src={logo} alt="mainLogo" /></li>
+-->
+  </div>
+
+  <div class="textPart">
+    <li><a href="#news">Add</a></li>
+    <li><a href="#contact">Edit</a></li>
+    <li><a href="#about">Delete</a></li>
+  </div>
+</ul>
 
 <style>
-  .menuBar {
+  ul {
+    /*
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    */
     display: flex;
-    padding: 15px;
-    background-color: #262626;
-    height: 30px;
-    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 1000;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
   }
 </style>
