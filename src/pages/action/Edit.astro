@@ -1,7 +1,5 @@
 ---
 import Fighter from "../components/Fighter.astro";
-import AddFighter from "./action/AddFighter.astro";
-import FighterCardAdd from "./fighterCardAdd.astro";
 import MainMenu from "../components/MainMenu.astro";
 import ShowCase from "../components/ShowCase.astro";
 import Devider from "../components/Devider.astro";
@@ -10,14 +8,12 @@ import Add from "../components/Add.astro";
 import Layout from "../layouts/Layout.astro";
 import { fighterDatas } from "../lib/fighterDatas";
 import { showCaseData } from "../lib/showCaseData";
-import Controls from "../components/Controls.astro";
 ---
 
 <Layout title="FighterCard">
   <MainMenu />
   <div class="showCase">
-    <!--ShowCase/Add -->
-    {showCaseData.map((showCase) => <ShowCase showCase={showCase} />)}
+    {showCaseData.map((showCase) => <Add showCase={showCase} />)}
   </div>
   <!-- 
   <div class="showCase">

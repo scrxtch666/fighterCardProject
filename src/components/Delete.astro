@@ -1,0 +1,103 @@
+---
+const { showCase } = Astro.props;
+import { Image } from "astro:assets";
+import yes from "../assets/yes.png";
+import no from "../assets/no.png";
+import refresh from "../assets/refresh.png";
+import Controls from "./Controls.astro";
+---
+
+<div class="card">
+  <div class="mainCase">
+    <!--Main case of card -->
+    <div class="textPart">
+      <form action="xxx">
+        <h3>Delete form</h3>
+        <input type="text" name="" id="" placeholder="Enter fighter name" />
+        <button>Delete</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- 
+<Controls />
+-->
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .mainCase {
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.8em;
+    height: 300px;
+    max-width: 550px;
+    width: 100%;
+    padding: 25px;
+    font-family: monospace;
+    font-size: large;
+    /* Původní
+    background-color: black;
+    */
+    background-color: #171717;
+    border-color: #171717;
+
+    box-shadow:
+      0 0 15px goldenrod,
+      0 0 15px goldenrod,
+      0 0 15px goldenrod,
+      0 0 15px goldenrod;
+  }
+
+  .mainCase:hover {
+    box-shadow:
+      0 0 5px goldenrod,
+      0 0 25px goldenrod,
+      0 0 50px goldenrod,
+      0 0 100px goldenrod;
+  }
+
+  .textPart {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 550px;
+  }
+
+  input,
+  textarea,
+  button {
+    background-color: #171717;
+    border-color: goldenrod;
+    border-radius: 0.7em;
+    color: whitesmoke;
+    font-family: monospace;
+    max-width: 200px;
+
+    height: 20px;
+  }
+
+  .conCase {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    height: 70px;
+    background-color: #171717;
+    border-radius: 0.9em;
+    font-size: small;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+  }
+</style>

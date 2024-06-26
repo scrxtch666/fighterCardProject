@@ -7,16 +7,8 @@ import obr4 from "../assets/obr4.jpg";
 import obr5 from "../assets/obr5.jpg";
 
 
-export const fighterDatas = [{
- name: "Scrxtch",
- belt: "Black",
- age: "21",
- weight: "85",
- height: "195",
- image: obr1,
- bio: "Fight. Win. Never surrender. Dark past, bright future. Blade's edge, spirit's might. Bold conquerors own the world."
-},
 
+export const fighterDatas = [
 {
   name: "Lacek",
   belt: "Red",
@@ -57,8 +49,36 @@ export const fighterDatas = [{
   height: "183",
   image: obr5,
   bio: "Youtuber"
-}
+},
+{
+  name: "Scrxtch",
+  belt: "Black",
+  age: "21",
+  weight: "85",
+  height: "195",
+  image: obr1,
+  bio: "Fight. Win. Never surrender. Dark past, bright future. Blade's edge, spirit's might. Bold conquerors own the world."
+ },
 
+ {
+  name: "Test",
+  belt: "White",
+  age: "12",
+  weight: "36",
+  height: "154",
+  image: obr1,
+  bio: "Test"
+ },
+
+ {
+  name: "Test2",
+  belt: "Red",
+  age: "18",
+  weight: "87",
+  height: "195",
+  image: obr1,
+  bio: "Test2"
+ }
  ];
 
 
