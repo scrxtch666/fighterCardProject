@@ -1,16 +1,5 @@
 ---
-import { db, Comment } from "astro:db";
-
-const comments = await db.select().from(Comment);
+import FighterCard from "./fighterCard.astro"
 ---
+<FighterCard />
 
-<h2>Data:</h2>
-
-{
-  comments.map(({ name, belt }) => (
-    <article>
-      <p>Name: {name}</p>
-      <p>Belt: {belt}</p>
-    </article>
-  ))
-}

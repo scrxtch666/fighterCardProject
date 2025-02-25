@@ -82,17 +82,23 @@ import refresh from "../assets/refresh.png";
   </div>
 
   <div class="controls">
-    <div class="add">
-      <Image src={yes} alt="yes" class="imgFit" />
-    </div>
+    <button class="con">
+      <a href="../action/AllStats">
+        <Image src={yes} alt="yes" class="imgFit" />
+      </a>
+    </button>
 
-    <div class="delete">
-      <Image src={no} alt="no" class="imgFit" />
-    </div>
+    <button class="con">
+      <a href="../fighterCard">
+        <Image src={no} alt="no" class="imgFit" />
+      </a>
+    </button>
 
-    <div class="refresh">
-      <Image src={refresh} alt="refresh" class="imgFit" />
-    </div>
+    <button class="con">
+      <a href="../action/AddFighter">
+        <Image src={refresh} alt="refresh" class="imgFit" />
+      </a>
+    </button>
   </div>
   <!--Pauza -->
 
@@ -249,6 +255,31 @@ import refresh from "../assets/refresh.png";
 
     .formCase {
       display: flex;
+    }
+
+    .con {
+      display: flex;
+      background-color: #171717;
+      max-width: 40px;
+      width: 100%;
+      max-height: 40px;
+      height: 100%;
+      padding: 8px;
+      border-radius: 0.7em;
+
+      box-shadow:
+        0 0 5px white,
+        0 0 5px white,
+        0 0 5px white,
+        0 0 5px white;
+    }
+
+    .con:hover {
+      box-shadow:
+        0 0 15px white,
+        0 0 15px white,
+        0 0 15px white,
+        0 0 15px white;
     }
   </style>
 </div>

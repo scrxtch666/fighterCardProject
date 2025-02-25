@@ -16,7 +16,7 @@ import Delete from "./Delete.astro";
 
 <ul>
   <div class="logoPart">
-    <li class="homeLogo"><a href="../fighterCard">FighterCards</a></li>
+    <li class="homeLogo"><a href="../fighterCard">FighterCardss</a></li>
     <!--
   <li><Image src={logo} alt="mainLogo" /></li>
 -->
@@ -33,7 +33,8 @@ import Delete from "./Delete.astro";
       >
     </li>
     <li>
-      <a href="/action/Edit"><Image src={retype} alt="" class="logo" /></a>
+      <a href="../action/AllStats"><Image src={retype} alt="" class="logo" /></a
+      >
     </li>
   </div>
 </ul>
@@ -69,13 +70,18 @@ import Delete from "./Delete.astro";
     text-decoration: none;
   }
 
-  li a:hover {
-    background-color: #111;
-  }
-
   .logo {
     width: 100%;
     height: 100%;
+  }
+
+  .logo:hover {
+    border-radius: 2em;
+    box-shadow:
+      0 0 15px white,
+      0 0 15px white,
+      0 0 15px white,
+      0 0 15px white;
   }
 
   .textPart {
